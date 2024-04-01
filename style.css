@@ -13,3 +13,24 @@ html {
   background-image: linear-gradient(to right, grey 1px, transparent 1px),
     linear-gradient(to bottom, grey 1px, transparent 1px);
 }
+
+.hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.hamburger__line {
+  margin: 3px 0 0;
+  padding: 1.5px 15px;
+  background-color: #2FBE5F;
+  transition: all linear .3s;
+}
+
+.hamburger--active .hamburger__line:first-of-type {
+  transform: rotate(45deg) translate(1px, 1px);
+}
+
+.hamburger--active .hamburger__line:last-of-type {
+  transform: rotate(-45deg) translate(3px, -4px);
+}
